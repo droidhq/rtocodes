@@ -1,0 +1,458 @@
+[
+    {
+        "SN":  "1",
+        "Code":  "AR",
+        "District":  "Araria",
+        "Headquarters":  "Araria",
+        "Population 2011":  "2,811,569",
+        "Area sq km":  "2,829",
+        "Density per sq km":  "751",
+        "RTO":  {
+                    "Araria":  "BR-38"
+                }
+    },
+    {
+        "SN":  "2",
+        "Code":  "AU",
+        "District":  "Aurangabad",
+        "Headquarters":  "Aurangabad",
+        "Population 2011":  "2,540,073",
+        "Area sq km":  "3,303",
+        "Density per sq km":  "607",
+        "RTO":  {
+                    "Aurangabad":  "BR-26"
+                }
+    },
+    {
+        "SN":  "3",
+        "Code":  "AW",
+        "District":  "Arwal",
+        "Headquarters":  "Arwal",
+        "Population 2011":  "699,000",
+        "Area sq km":  "637",
+        "Density per sq km":  "918",
+        "RTO":  {
+                    "Arwal":  "BR-56"
+                }
+    },
+    {
+        "SN":  "4",
+        "Code":  "BA",
+        "District":  "Banka",
+        "Headquarters":  "Banka",
+        "Population 2011":  "2,034,763",
+        "Area sq km":  "3,018",
+        "Density per sq km":  "533",
+        "RTO":  {
+                    "Banka":  "BR-51"
+                }
+    },
+    {
+        "SN":  "5",
+        "Code":  "BE",
+        "District":  "Begusarai",
+        "Headquarters":  "Begusarai",
+        "Population 2011":  "2,970,541",
+        "Area sq km":  "1,917",
+        "Density per sq km":  "1,222",
+        "RTO":  {
+                    "Begusarai":  "BR-09"
+                }
+    },
+    {
+        "SN":  "6",
+        "Code":  "BG",
+        "District":  "Bhagalpur",
+        "Headquarters":  "Bhagalpur",
+        "Population 2011":  "3,037,766",
+        "Area sq km":  "2,569",
+        "Density per sq km":  "946",
+        "RTO":  {
+                    "Bhagalpur":  "BR-10"
+                }
+    },
+    {
+        "SN":  "7",
+        "Code":  "BJ",
+        "District":  "Bhojpur",
+        "Headquarters":  "Arrah",
+        "Population 2011":  "2,728,407",
+        "Area sq km":  "2,473",
+        "Density per sq km":  "903",
+        "RTO":  {
+                    "Bhojpur":  "BR-03"
+                }
+    },
+    {
+        "SN":  "8",
+        "Code":  "BU",
+        "District":  "Buxar",
+        "Headquarters":  "Buxar",
+        "Population 2011":  "1,706,352",
+        "Area sq km":  "1,624",
+        "Density per sq km":  "864",
+        "RTO":  {
+                    "Buxar":  "BR-44"
+                }
+    },
+    {
+        "SN":  "9",
+        "Code":  "DA",
+        "District":  "Darbhanga",
+        "Headquarters":  "Darbhanga",
+        "Population 2011":  "3,937,385",
+        "Area sq km":  "2,278",
+        "Density per sq km":  "1,442",
+        "RTO":  {
+                    "Darbhanga":  "BR-07"
+                }
+    },
+    {
+        "SN":  "10",
+        "Code":  "EC",
+        "District":  "East Champaran",
+        "Headquarters":  "Motihari",
+        "Population 2011":  "5,099,371",
+        "Area sq km":  "3,969",
+        "Density per sq km":  "991",
+        "RTO":  {
+                    "Motihari":  "BR-05"
+                }
+    },
+    {
+        "SN":  "11",
+        "Code":  "GA",
+        "District":  "Gaya",
+        "Headquarters":  "Gaya",
+        "Population 2011":  "4,391,418",
+        "Area sq km":  "4,978",
+        "Density per sq km":  "696",
+        "RTO":  {
+                    "Gaya":  "BR-02"
+                }
+    },
+    {
+        "SN":  "12",
+        "Code":  "GO",
+        "District":  "Gopalganj",
+        "Headquarters":  "Gopalganj",
+        "Population 2011":  "2,562,012",
+        "Area sq km":  "2,033",
+        "Density per sq km":  "1,057",
+        "RTO":  {
+                    "Gopalganj":  "BR-28"
+                }
+    },
+    {
+        "SN":  "13",
+        "Code":  "JA",
+        "District":  "Jamui",
+        "Headquarters":  "Jamui",
+        "Population 2011":  "1,760,405",
+        "Area sq km":  "3,099",
+        "Density per sq km":  "451",
+        "RTO":  {
+                    "Jamui":  "BR-46"
+                }
+    },
+    {
+        "SN":  "14",
+        "Code":  "JE",
+        "District":  "Jehanabad",
+        "Headquarters":  "Jehanabad",
+        "Population 2011":  "1,125,313",
+        "Area sq km":  "1,569",
+        "Density per sq km":  "963",
+        "RTO":  {
+                    "Jehanabad":  "BR-25"
+                }
+    },
+    {
+        "SN":  "15",
+        "Code":  "KH",
+        "District":  "Khagaria",
+        "Headquarters":  "Khagaria",
+        "Population 2011":  "1,666,886",
+        "Area sq km":  "1,486",
+        "Density per sq km":  "859",
+        "RTO":  {
+                    "Khagaria":  "BR-34"
+                }
+    },
+    {
+        "SN":  "16",
+        "Code":  "KI",
+        "District":  "Kishanganj",
+        "Headquarters":  "Kishanganj",
+        "Population 2011":  "1,690,400",
+        "Area sq km":  "1,884",
+        "Density per sq km":  "687",
+        "RTO":  {
+                    "Kishanganj":  "BR-37"
+                }
+    },
+    {
+        "SN":  "17",
+        "Code":  "KM",
+        "District":  "Kaimur",
+        "Headquarters":  "Bhabua",
+        "Population 2011":  "1,626,384",
+        "Area sq km":  "3,363",
+        "Density per sq km":  "382",
+        "RTO":  {
+                    "Bhabua":  "BR-45"
+                }
+    },
+    {
+        "SN":  "18",
+        "Code":  "KT",
+        "District":  "Katihar",
+        "Headquarters":  "Katihar",
+        "Population 2011":  "3,071,029",
+        "Area sq km":  "3,056",
+        "Density per sq km":  "782",
+        "RTO":  {
+                    "Katihar":  "BR-39"
+                }
+    },
+    {
+        "SN":  "19",
+        "Code":  "LA",
+        "District":  "Lakhisarai",
+        "Headquarters":  "Lakhisarai",
+        "Population 2011":  "1,000,912",
+        "Area sq km":  "1,229",
+        "Density per sq km":  "652",
+        "RTO":  {
+                    "Lakhisarai":  "BR-53"
+                }
+    },
+    {
+        "SN":  "20",
+        "Code":  "MB",
+        "District":  "Madhubani",
+        "Headquarters":  "Madhubani",
+        "Population 2011":  "4,487,379",
+        "Area sq km":  "3,501",
+        "Density per sq km":  "1,020",
+        "RTO":  {
+                    "Madhubani":  "BR-32"
+                }
+    },
+    {
+        "SN":  "21",
+        "Code":  "MG",
+        "District":  "Munger",
+        "Headquarters":  "Munger",
+        "Population 2011":  "1,367,765",
+        "Area sq km":  "1,419",
+        "Density per sq km":  "800",
+        "RTO":  {
+                    "Munger":  "BR-08"
+                }
+    },
+    {
+        "SN":  "22",
+        "Code":  "MP",
+        "District":  "Madhepura",
+        "Headquarters":  "Madhepura",
+        "Population 2011":  "2,001,762",
+        "Area sq km":  "1,787",
+        "Density per sq km":  "853",
+        "RTO":  {
+                    "Madhepura":  "BR-43"
+                }
+    },
+    {
+        "SN":  "23",
+        "Code":  "MZ",
+        "District":  "Muzaffarpur",
+        "Headquarters":  "Muzaffarpur",
+        "Population 2011":  "4,801,062",
+        "Area sq km":  "3,173",
+        "Density per sq km":  "1,180",
+        "RTO":  {
+                    "Muzaffarpur":  "BR-06"
+                }
+    },
+    {
+        "SN":  "24",
+        "Code":  "NL",
+        "District":  "Nalanda",
+        "Headquarters":  "Bihar Sharif",
+        "Population 2011":  "2,877,653",
+        "Area sq km":  "2,354",
+        "Density per sq km":  "1,006",
+        "RTO":  {
+                    "Nalanda":  "BR-21"
+                }
+    },
+    {
+        "SN":  "25",
+        "Code":  "NW",
+        "District":  "Nawada",
+        "Headquarters":  "Nawada",
+        "Population 2011":  "2,219,146",
+        "Area sq km":  "2,492",
+        "Density per sq km":  "726",
+        "RTO":  {
+                    "Nawada":  "BR-27"
+                }
+    },
+    {
+        "SN":  "26",
+        "Code":  "PA",
+        "District":  "Patna",
+        "Headquarters":  "Patna",
+        "Population 2011":  "5,838,465",
+        "Area sq km":  "3,202",
+        "Density per sq km":  "1,471",
+        "RTO":  {
+                    "Patna":  "BR-01"
+                }
+    },
+    {
+        "SN":  "27",
+        "Code":  "PU",
+        "District":  "Purnia",
+        "Headquarters":  "Purnia",
+        "Population 2011":  "3,264,619",
+        "Area sq km":  "3,228",
+        "Density per sq km":  "787",
+        "RTO":  {
+                    "Purnia":  "BR-11"
+                }
+    },
+    {
+        "SN":  "28",
+        "Code":  "RO",
+        "District":  "Rohtas",
+        "Headquarters":  "Sasaram",
+        "Population 2011":  "2,959,918",
+        "Area sq km":  "3,850",
+        "Density per sq km":  "636",
+        "RTO":  {
+                    "Rohtas":  "BR-24"
+                }
+    },
+    {
+        "SN":  "29",
+        "Code":  "SH",
+        "District":  "Saharsa",
+        "Headquarters":  "Saharsa",
+        "Population 2011":  "1,900,661",
+        "Area sq km":  "1,702",
+        "Density per sq km":  "885",
+        "RTO":  {
+                    "Saharsa":  "BR-19"
+                }
+    },
+    {
+        "SN":  "30",
+        "Code":  "SM",
+        "District":  "Samastipur",
+        "Headquarters":  "Samastipur",
+        "Population 2011":  "4,261,566",
+        "Area sq km":  "2,905",
+        "Density per sq km":  "1,175",
+        "RTO":  {
+                    "Samastipur":  "BR-33"
+                }
+    },
+    {
+        "SN":  "31",
+        "Code":  "SO",
+        "District":  "Sheohar",
+        "Headquarters":  "Sheohar",
+        "Population 2011":  "656,246",
+        "Area sq km":  "349",
+        "Density per sq km":  "1,880",
+        "RTO":  {
+                    "Sheohar":  "BR-55"
+                }
+    },
+    {
+        "SN":  "32",
+        "Code":  "SP",
+        "District":  "Sheikhpura",
+        "Headquarters":  "Sheikhpura",
+        "Population 2011":  "634,927",
+        "Area sq km":  "689",
+        "Density per sq km":  "762",
+        "RTO":  {
+                    "Sheikhpura":  "BR-52"
+                }
+    },
+    {
+        "SN":  "33",
+        "Code":  "SR",
+        "District":  "Saran",
+        "Headquarters":  "Chhapra",
+        "Population 2011":  "3,951,862",
+        "Area sq km":  "2,641",
+        "Density per sq km":  "1,231",
+        "RTO":  {
+                    "Chhapra":  "BR-04"
+                }
+    },
+    {
+        "SN":  "34",
+        "Code":  "ST",
+        "District":  "Sitamarhi",
+        "Headquarters":  "Dumra, Sitamarhi",
+        "Population 2011":  "3,423,574",
+        "Area sq km":  "2,199",
+        "Density per sq km":  "1,214",
+        "RTO":  {
+                    "Sitamarhi":  "BR-30"
+                }
+    },
+    {
+        "SN":  "35",
+        "Code":  "SU",
+        "District":  "Supaul",
+        "Headquarters":  "Supaul",
+        "Population 2011":  "2,229,076",
+        "Area sq km":  "2,410",
+        "Density per sq km":  "724",
+        "RTO":  {
+                    "Supaul":  "BR-50"
+                }
+    },
+    {
+        "SN":  "36",
+        "Code":  "SW",
+        "District":  "Siwan",
+        "Headquarters":  "Siwan",
+        "Population 2011":  "3,330,464",
+        "Area sq km":  "2,219",
+        "Density per sq km":  "1,221",
+        "RTO":  {
+                    "Siwan":  "BR-29"
+                }
+    },
+    {
+        "SN":  "37",
+        "Code":  "VA",
+        "District":  "Vaishali",
+        "Headquarters":  "Hajipur",
+        "Population 2011":  "3,495,021",
+        "Area sq km":  "2,036",
+        "Density per sq km":  "1,332",
+        "RTO":  {
+                    "Vaishali":  "BR-31"
+                }
+    },
+    {
+        "SN":  "38",
+        "Code":  "WC",
+        "District":  "West Champaran",
+        "Headquarters":  "Bettiah",
+        "Population 2011":  "3,935,042",
+        "Area sq km":  "5,229",
+        "Density per sq km":  "582",
+        "RTO":  {
+                    "Bettiah":  "BR-22"
+                }
+    }
+]

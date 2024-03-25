@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTO Information</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            /* Set text color to white */
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #750606bb;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #1f0606;
+            cursor: pointer;
+            /* Add cursor pointer for clickable header */
+        }
+
+        #selectState {
+            margin-bottom: 10px;
+            color: black;
+            /* Set dropdown text color */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>RTO Information</h2>
+
+    <!-- Dropdown for selecting state -->
+    <select id="selectState" onchange="loadRTOData()">
+    </select>
+
+    <table id="rtoTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">Code</th>
+                <th onclick="sortTable(1)">Name</th>
+                <th onclick="sortTable(2)">District</th>
+            </tr>
+        </thead>
+        <tbody id="rtoTableBody">
+        </tbody>
+    </table>
+
+    <script>
+        let states = ["BR", "UP", "UK"];
+
+        // Function to populate dropdown with states
+        function populateDropdown() {
+            const select = document.getElementById('selectState');
+
+            // Clear existing options
+            select.innerHTML = '';
+
+            // Add options from the 'states' array
+            states.forEach(state => {
+                const option = document.createElement('option');
+                option.textContent = state;
+                option.value = state;
+                select.appendChild(option);
+            });
+        }
+
+        populateDropdown(); // Call the function to populate dropdown initially
+
+        let sortDirection = 1; // 1 for ascending, -1 for descending
+        let sortColumn = 0; // Default sort column is 0 (Code)
+
+        function sortTable(columnIndex) {
+            const tableBody = document.getElementById('rtoTableBody');
+            const rows = Array.from(tableBody.querySelectorAll('tr'));
+
+            // Toggle sort direction if same column clicked again
+            if (sortColumn === columnIndex) {
+                sortDirection *= -1;
+            } else {
+                sortDirection = 1; // Reset sort direction if different column clicked
+                sortColumn = columnIndex;
+            }
+
+            // Sort rows based on the selected column
+            rows.sort((a, b) => {
+                const aValue = a.children[columnIndex].textContent.trim();
+                const bValue = b.children[columnIndex].textContent.trim();
+
+                if (isNaN(aValue) || isNaN(bValue)) {
+                    return sortDirection * aValue.localeCompare(bValue);
+                } else {
+                    return sortDirection * (parseInt(aValue) - parseInt(bValue));
+                }
+            });
+
+            // Reorder table rows
+            tableBody.innerHTML = '';
+            rows.forEach(row => {
+                tableBody.appendChild(row);
+            });
+        }
+
+        function loadRTOData() {
+            const selectedState = document.getElementById('selectState').value;
+            const jsonFile = selectedState + '.json';
+
+            fetch(jsonFile)
+                .then(response => response.json())
+                .then(data => {
+                    const rtoTableBody = document.getElementById('rtoTableBody');
+                    rtoTableBody.innerHTML = ''; // Clear existing table data
+
+                    // Iterate over each district in the JSON data
+                    data.forEach(district => {
+                        // Iterate over RTO codes for the district
+                        for (const [rtoOffice, rtoCode] of Object.entries(district['RTO'])) {
+                            const row = document.createElement('tr');
+
+                            // Create and populate code, name, and district cells
+                            const codeCell = document.createElement('td');
+                            codeCell.textContent = rtoCode;
+                            row.appendChild(codeCell);
+
+                            const nameCell = document.createElement('td');
+                            nameCell.textContent = rtoOffice;
+                            row.appendChild(nameCell);
+
+                            const districtCell = document.createElement('td');
+                            districtCell.textContent = district.District;
+                            row.appendChild(districtCell);
+
+                            // Append the row to the table body
+                            rtoTableBody.appendChild(row);
+                        }
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+        }
+
+        // Initially load data for Bihar
+        loadRTOData();
+    </script>
+
+</body>
+
+</html>
