@@ -1,165 +1,165 @@
 [
-    {
-        "SN":  "1",
-        "Code":  "AL",
-        "District":  "Almora",
-        "Headquarters":  "Almora",
-        "Population 2011":  "621,972",
-        "Area sq km":  "3,083",
-        "Density per sq km":  "201",
-        "RTO":  {
-                    "Ranikhet":  "UK-20",
-                    "Almora":  "UK-01"
-                }
-    },
-    {
-        "SN":  "2",
-        "Code":  "BA",
-        "District":  "Bageshwar",
-        "Headquarters":  "Bageshwar",
-        "Population 2011":  "259,840",
-        "Area sq km":  "2,302",
-        "Density per sq km":  "113",
-        "RTO":  {
-                    "Bageshwar":  "UK-02"
-                }
-    },
-    {
-        "SN":  "3",
-        "Code":  "CL",
-        "District":  "Chamoli",
-        "Headquarters":  "Gopeshwar",
-        "Population 2011":  "391,114",
-        "Area sq km":  "8,030",
-        "Density per sq km":  "49",
-        "RTO":  {
-                    "Champawat":  "UK-03"
-                }
-    },
-    {
-        "SN":  "4",
-        "Code":  "CP",
-        "District":  "Champawat",
-        "Headquarters":  "Champawat",
-        "Population 2011":  "259,315",
-        "Area sq km":  "1,781",
-        "Density per sq km":  "146",
-        "RTO":  {
-                    "Ramnagar":  "UK-19",
-                    "Nainital":  "UK-04"
-                }
-    },
-    {
-        "SN":  "5",
-        "Code":  "DD",
-        "District":  "Dehradun",
-        "Headquarters":  "Dehradun",
-        "Population 2011":  "1,695,860",
-        "Area sq km":  "3,088",
-        "Density per sq km":  "550",
-        "RTO":  {
-                    "Pithoragarh":  "UK-05"
-                }
-    },
-    {
-        "SN":  "6",
-        "Code":  "HA",
-        "District":  "Haridwar",
-        "Headquarters":  "Haridwar",
-        "Population 2011":  "1,927,029",
-        "Area sq km":  "2,360",
-        "Density per sq km":  "817",
-        "RTO":  {
-                    "UdhamSinghNagar":  "UK-06",
-                    "Kashipur":  "UK-18"
-                }
-    },
-    {
-        "SN":  "7",
-        "Code":  "NA",
-        "District":  "Nainital",
-        "Headquarters":  "Nainital",
-        "Population 2011":  "955,128",
-        "Area sq km":  "3,860",
-        "Density per sq km":  "247",
-        "RTO":  {
-                    "Rishikesh":  "UK-14",
-                    "Dehradun":  "UK-07",
-                    "Vikasnagar":  "UK-16"
-                }
-    },
-    {
-        "SN":  "8",
-        "Code":  "PG",
-        "District":  "Pauri Garhwal",
-        "Headquarters":  "Pauri",
-        "Population 2011":  "686,572",
-        "Area sq km":  "5,399",
-        "Density per sq km":  "127",
-        "RTO":  {
-                    "Haridwar":  "UK-08",
-                    "Roorkee":  "UK-17"
-                }
-    },
-    {
-        "SN":  "9",
-        "Code":  "PI",
-        "District":  "Pithoragarh",
-        "Headquarters":  "Pithoragarh",
-        "Population 2011":  "485,993",
-        "Area sq km":  "7,100",
-        "Density per sq km":  "68",
-        "RTO":  {
-                    "Tehri":  "UK-09"
-                }
-    },
-    {
-        "SN":  "10",
-        "Code":  "RP",
-        "District":  "Rudraprayag",
-        "Headquarters":  "Rudraprayag",
-        "Population 2011":  "236,857",
-        "Area sq km":  "1,890",
-        "Density per sq km":  "125",
-        "RTO":  {
-                    "Uttarkashi":  "UK-10"
-                }
-    },
-    {
-        "SN":  "11",
-        "Code":  "TG",
-        "District":  "Tehri Garhwal",
-        "Headquarters":  "Tehri",
-        "Population 2011":  "616,409",
-        "Area sq km":  "4,080",
-        "Density per sq km":  "151",
-        "RTO":  {
-                    "Chamoli":  "UK-11"
-                }
-    },
-    {
-        "SN":  "12",
-        "Code":  "US",
-        "District":  "Udham Singh Nagar",
-        "Headquarters":  "Rudrapur",
-        "Population 2011":  "1,648,367",
-        "Area sq km":  "2,908",
-        "Density per sq km":  "567",
-        "RTO":  {
-                    "Kotdwar":  "UK-15",
-                    "PauriGarhwal":  "UK-12"
-                }
-    },
-    {
-        "SN":  "13",
-        "Code":  "UT",
-        "District":  "Uttarkashi",
-        "Headquarters":  "Uttarkashi",
-        "Population 2011":  "329,686",
-        "Area sq km":  "8,016",
-        "Density per sq km":  "41",
-        "RTO":  {
-                    "Rudraprayag":  "UK-13"
-                }
+  {
+    "SN": "1",
+    "Code": "AL",
+    "District": "Almora",
+    "Headquarters": "Almora",
+    "Population 2011": "621,972",
+    "Area sq km": "3,083",
+    "Density per sq km": "201",
+    "RTO": {
+      "Ranikhet": "UK-20",
+      "Almora": "UK-01"
     }
+  },
+  {
+    "SN": "2",
+    "Code": "BA",
+    "District": "Bageshwar",
+    "Headquarters": "Bageshwar",
+    "Population 2011": "259,840",
+    "Area sq km": "2,302",
+    "Density per sq km": "113",
+    "RTO": {
+      "Bageshwar": "UK-02"
+    }
+  },
+  {
+    "SN": "3",
+    "Code": "CL",
+    "District": "Chamoli",
+    "Headquarters": "Gopeshwar",
+    "Population 2011": "391,114",
+    "Area sq km": "8,030",
+    "Density per sq km": "49",
+    "RTO": {
+      "Chamoli": "UK-11"
+    }
+  },
+  {
+    "SN": "4",
+    "Code": "CP",
+    "District": "Champawat",
+    "Headquarters": "Champawat",
+    "Population 2011": "259,315",
+    "Area sq km": "1,781",
+    "Density per sq km": "146",
+    "RTO": {
+      "Champawat": "UK-03"
+    }
+  },
+  {
+    "SN": "5",
+    "Code": "DD",
+    "District": "Dehradun",
+    "Headquarters": "Dehradun",
+    "Population 2011": "1,695,860",
+    "Area sq km": "3,088",
+    "Density per sq km": "550",
+    "RTO": {
+      "Vikasnagar": "UK-16",
+      "Rishikesh": "UK-14",
+      "Dehradun": "UK-07"
+    }
+  },
+  {
+    "SN": "6",
+    "Code": "HA",
+    "District": "Haridwar",
+    "Headquarters": "Haridwar",
+    "Population 2011": "1,927,029",
+    "Area sq km": "2,360",
+    "Density per sq km": "817",
+    "RTO": {
+      "Roorkee": "UK-17",
+      "Haridwar": "UK-08"
+    }
+  },
+  {
+    "SN": "7",
+    "Code": "NA",
+    "District": "Nainital",
+    "Headquarters": "Nainital",
+    "Population 2011": "955,128",
+    "Area sq km": "3,860",
+    "Density per sq km": "247",
+    "RTO": {
+      "Ramnagar": "UK-19",
+      "Nainital": "UK-04"
+    }
+  },
+  {
+    "SN": "8",
+    "Code": "PG",
+    "District": "Pauri Garhwal",
+    "Headquarters": "Pauri",
+    "Population 2011": "686,572",
+    "Area sq km": "5,399",
+    "Density per sq km": "127",
+    "RTO": {
+      "Kotdwar": "UK-15",
+      "Pauri Garhwal": "UK-12"
+    }
+  },
+  {
+    "SN": "9",
+    "Code": "PI",
+    "District": "Pithoragarh",
+    "Headquarters": "Pithoragarh",
+    "Population 2011": "485,993",
+    "Area sq km": "7,100",
+    "Density per sq km": "68",
+    "RTO": {
+      "Pithoragarh": "UK-05"
+    }
+  },
+  {
+    "SN": "10",
+    "Code": "RP",
+    "District": "Rudraprayag",
+    "Headquarters": "Rudraprayag",
+    "Population 2011": "236,857",
+    "Area sq km": "1,890",
+    "Density per sq km": "125",
+    "RTO": {
+      "Rudraprayag": "UK-13"
+    }
+  },
+  {
+    "SN": "11",
+    "Code": "TG",
+    "District": "Tehri Garhwal",
+    "Headquarters": "Tehri",
+    "Population 2011": "616,409",
+    "Area sq km": "4,080",
+    "Density per sq km": "151",
+    "RTO": {
+      "Tehri": "UK-09"
+    }
+  },
+  {
+    "SN": "12",
+    "Code": "US",
+    "District": "Udham Singh Nagar",
+    "Headquarters": "Rudrapur",
+    "Population 2011": "1,648,367",
+    "Area sq km": "2,908",
+    "Density per sq km": "567",
+    "RTO": {
+      "Udham Singh Nagar": "UK-06",
+      "Kashipur": "UK-18"
+    }
+  },
+  {
+    "SN": "13",
+    "Code": "UT",
+    "District": "Uttarkashi",
+    "Headquarters": "Uttarkashi",
+    "Population 2011": "329,686",
+    "Area sq km": "8,016",
+    "Density per sq km": "41",
+    "RTO": {
+      "Uttarkashi": "UK-10"
+    }
+  }
 ]
