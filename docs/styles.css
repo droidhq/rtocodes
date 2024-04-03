@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #750606bb;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #1f0606;
+    cursor: pointer;
+    /* Add cursor pointer for clickable header */
+}
+
+#selectState {
+    margin-bottom: 8px;
+    color: #ffffff;
+    background-color: #1f0606;
+    border: 1px solid white;
+    padding: 8px;
+}
+
+#searchInput {
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    background-color: #d8bbbb34;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#searchInput:focus {
+    outline: none;
+    /* Remove outline on focus */
+}
