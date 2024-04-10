@@ -1,0 +1,98 @@
+[
+    {
+        "Code":  "AN",
+        "State":  "Andaman and Nicobar"
+    },
+    {
+        "Code":  "AP",
+        "State":  "Andhra Pradesh"
+    },
+    {
+        "Code":  "AR",
+        "State":  "Arunachal Pradesh"
+    },
+    {
+        "Code":  "AS",
+        "State":  "Assam"
+    },
+    {
+        "Code":  "BR",
+        "State":  "Bihar"
+    },
+    {
+        "Code":  "CH",
+        "State":  "Chandigarh"
+    },
+    {
+        "Code":  "CG",
+        "State":  "Chattisgarh"
+    },
+    {
+        "Code":  "DD",
+        "State":  "Dadra and Nagar Haveli and Daman and Diu"
+    },
+    {
+        "Code":  "DL",
+        "State":  "Delhi"
+    },
+    {
+        "Code":  "GA",
+        "State":  "Goa"
+    },
+    {
+        "Code":  "GJ",
+        "State":  "Gujrat"
+    },
+    {
+        "Code":  "HR",
+        "State":  "Haryana"
+    },
+    {
+        "Code":  "HP",
+        "State":  "Himachal Pradesh"
+    },
+    {
+        "Code":  "JK",
+        "State":  "Jammu \u0026 Kashmir"
+    },
+    {
+        "Code":  "JH",
+        "State":  "Jharkhand"
+    },
+    {
+        "Code":  "KA",
+        "State":  "Karanataka"
+    },
+    {
+        "Code":  "KL",
+        "State":  "Kerala"
+    },
+    {
+        "Code":  "LA",
+        "State":  "Ladakh"
+    },
+    {
+        "Code":  "LD",
+        "State":  "Lakshadweep"
+    },
+    {
+        "Code":  "MH",
+        "State":  "Maharashtra"
+    },
+    {
+        "Code":  "MN",
+        "State":  "Manipur"
+    },
+    {
+        "Code":  "ML",
+        "State":  "Meghalaya"
+    },
+    {
+        "Code":  "UP",
+        "State":  "Uttar Pradesh"
+    },
+    {
+        "Code":  "UK",
+        "State":  "Uttrakhand"
+    }
+]

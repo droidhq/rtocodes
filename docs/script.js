@@ -1,55 +1,46 @@
-const states = [
-  "AS",
-  "AR",
-  "BR",
-  "CG",
-  "CH",
-  "DL",
-  "GA",
-  "GJ",
-  "UP",
-  "UK",
-].sort();
-
 const selectState = document.getElementById("selectState");
 const rtoTableBody = document.getElementById("rtoTableBody");
 const stateDataCache = {};
+let statesarray = {};
 
-// Populate dropdown with states
-function populateDropdown() {
+function populateDropdown(statesarray) {
   const select = document.getElementById("selectState");
-  states.forEach((state) => {
-    select.innerHTML += `<option value="${state}">${state}</option>`;
+  statesarray.forEach((state) => {
+    select.innerHTML += `<option value="${state.Code}">${state.State}</option>`;
   });
 }
 
-// Check if data for a state is cached
-const isDataCached = (state) => stateDataCache.hasOwnProperty(state);
+async function fetchStates(statesfile) {
+  try {
+    const response = await fetch(statesfile);
+    const data = await response.json();
+    states = data;
+  } catch (error) {
+    console.error("Error fetching states:", error);
+  }
+  statesarray = states;
+  populateDropdown(states);
+}
 
-// Fetch data for selected states
+// Fetch the states data and call populateDropdown() when it's fetched
 async function fetchDataForSelectedStates(selectedState) {
   try {
     if (selectedState === "All") {
-      let combinedData = []; // Array to hold combined data for all states
-
-      // Fetch and cache data for each state if not already cached
-      for (const state of states.filter((state) => state !== "All")) {
-        if (!isDataCached(state)) {
-          const response = await fetch(`json/${state}.json`);
-          stateDataCache[state] = await response.json();
+      const fetchPromises = states.map(async (state) => {
+        if (!stateDataCache.hasOwnProperty(state.Code)) {
+          const response = await fetch(`json/${state.Code}.json`);
+          stateDataCache[state.Code] = await response.json();
         }
-        // Add data for the current state to the combinedData array
-        combinedData = combinedData.concat(stateDataCache[state]);
-      }
-
-      return combinedData; // Return combined data for all states
+        return stateDataCache[state.Code];
+      });
+      const combinedData = await Promise.all(fetchPromises);
+      return combinedData.reduce((acc, curr) => acc.concat(curr), []);
     } else {
-      // Fetch and cache data for the selected state if not already cached
-      if (!isDataCached(selectedState)) {
+      if (!stateDataCache.hasOwnProperty(selectedState)) {
         const response = await fetch(`json/${selectedState}.json`);
         stateDataCache[selectedState] = await response.json();
       }
-      return stateDataCache[selectedState]; // Return data for the selected state
+      return stateDataCache[selectedState];
     }
   } catch (error) {
     console.error(`Error fetching data for ${selectedState}:`, error);
@@ -57,62 +48,70 @@ async function fetchDataForSelectedStates(selectedState) {
   }
 }
 
+async function printRTOData(data) {
+  let tableHTML = "";
+  data.forEach((district) => {
+    Object.entries(district["RTO"]).forEach(([Office, rtoArray]) => {
+      rtoArray.forEach((rtoData) => {
+        tableHTML += `<tr>
+          <td>${rtoData.Code}</td>
+          <td>${Office}</td>
+          <td>${district.District}</td>
+          <td>${rtoData.JurisdictionArea}</td>
+        </tr>`;
+      });
+    });
+  });
+  rtoTableBody.innerHTML = tableHTML;
+}
+
 // Load RTO data
-async function loadRTOData() {
+async function loadRTOData(selectedState) {
   try {
-    const selectedState = selectState.value;
     const data = await fetchDataForSelectedStates(selectedState);
     const dataArray = Array.isArray(data) ? data : [data];
+
+    // Clear the search input value
+    document.getElementById("searchInput").value = "";
 
     // Clear the table body before printing new data
     rtoTableBody.innerHTML = "";
 
-    printdata(dataArray);
+    printRTOData(dataArray);
   } catch (error) {
     console.error("Error loading RTO data:", error);
   }
   sortTable(0);
 }
 
-// Print data to table
-async function printdata(data) {
-  let tableHTML = "";
-  data.forEach((district) => {
-    Object.entries(district["RTO"]).forEach(([rtoOffice, rtoData]) => {
-      tableHTML += `
-        <tr>
-          <td>${rtoData.Code}</td>
-          <td>${rtoOffice}</td>
-          <td>${rtoData.JurisdictionArea}</td>
-          <td>${district.District}</td>
-        </tr>`;
-    });
-  });
-  rtoTableBody.innerHTML = tableHTML;
-}
-
-// Function to sort the table based on the provided column index
 function sortTable(columnIndex) {
   const tableBody = document.getElementById("rtoTableBody");
   const rows = Array.from(tableBody.querySelectorAll("tr"));
-
   rows.sort((a, b) => {
     const aValue = a.cells[columnIndex].textContent.trim();
     const bValue = b.cells[columnIndex].textContent.trim();
 
-    return isNaN(aValue) || isNaN(bValue)
-      ? aValue.localeCompare(bValue)
-      : parseInt(aValue) - parseInt(bValue);
+    // Compare the first two characters (alphabet part)
+    const compareAlphabet = aValue
+      .substring(0, 2)
+      .localeCompare(bValue.substring(0, 2));
+
+    if (compareAlphabet !== 0) {
+      return compareAlphabet;
+    }
+
+    // Extract and compare the numeric part
+    const aNumber = parseInt(aValue.substring(2));
+    const bNumber = parseInt(bValue.substring(2));
+    return aNumber - bNumber;
   });
 
   rows.forEach((row) => tableBody.appendChild(row));
 }
 
-//
-function searchTable() {
-  const input = document.getElementById("searchInput").value.toUpperCase();
+function searchTable(inputId) {
+  const input = document.getElementById(inputId).value.toUpperCase();
   const rows = document.querySelectorAll("#rtoTableBody tr");
-
   rows.forEach((row) => {
     const cells = Array.from(row.querySelectorAll("td"));
     const found = cells.some(
@@ -122,10 +121,35 @@ function searchTable() {
   });
 }
 
-// Initially load data
-window.onload = function () {
-  document.getElementById("searchInput").focus();
-};
+function downloadAsCSV(selectedState) {
+  const table = document.getElementById("rtoTable");
+  let csv = "";
+  const visibleRows = Array.from(
+    table.querySelectorAll("#rtoTableBody tr")
+  ).filter((row) => row.style.display !== "none");
 
-populateDropdown();
-loadRTOData();
+  for (const row of visibleRows) {
+    for (let j = 0; j < row.cells.length; j++) {
+      const cell = row.cells[j];
+      const cellContent = `"${cell.textContent.trim().replace(/"/g, '""')}"`;
+      csv += cellContent + (j < row.cells.length - 1 ? "," : "");
+    }
+    csv += "\n";
+  }
+
+  if (csv.trim() === "") {
+    alert("No search results to download.");
+    return;
+  }
+
+  const blob = new Blob([csv], { type: "text/csv" });
+  const link = document.createElement("a");
+  link.href = window.URL.createObjectURL(blob);
+  link.download = `${selectedState}.csv`;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
+// Call the fetchStates function
+fetchStates("States.json");

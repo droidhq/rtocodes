@@ -1,1 +1,1 @@
-{"SN":"1","Code":"CH","District":"Chandigarh","Headquarters":"Chandigarh","RTO":{"Chandigarh":{"Code":"CH-(01-04)","JurisdictionArea":"Chandigarh"}}}
+{"District":"Chandigarh","Headquarters":"Chandigarh","RTO":{"Chandigarh":[{"Code":"CH01","JurisdictionArea":"Chandigarh"}]," Chandigarh":[{"Code":"CH02","JurisdictionArea":"Chandigarh"},{"Code":"CH03","JurisdictionArea":"Chandigarh"},{"Code":"CH04","JurisdictionArea":"Chandigarh"}]}}

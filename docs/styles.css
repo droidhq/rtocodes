@@ -1,6 +1,7 @@
 body {
     background-color: black;
     color: white;
+    font-family:system-ui;
 }
 
 table {
@@ -37,7 +38,15 @@ th {
     border-radius: 5px;
 }
 
-#searchInput:focus {
-    outline: none;
-    /* Remove outline on focus */
+#downloadButton {
+    background-color: #63373763;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#downloadButton:hover {
+    background-color: #750606bb;
 }
