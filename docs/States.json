@@ -76,6 +76,10 @@
         "State":  "Lakshadweep"
     },
     {
+        "Code":  "MP",
+        "State":  "Madhaya Pradesh"
+    },
+    {
         "Code":  "MH",
         "State":  "Maharashtra"
     },
@@ -86,6 +90,26 @@
     {
         "Code":  "ML",
         "State":  "Meghalaya"
+    },
+    {
+        "Code":  "MZ",
+        "State":  "Mizoram"
+    },
+    {
+        "Code":  "NL",
+        "State":  "Nagaland"
+    },
+    {
+        "Code":  "OD",
+        "State":  "Odisha"
+    },
+    {
+        "Code":  "PY",
+        "State":  "Puducherry"
+    },
+    {
+        "Code":  "PB",
+        "State":  "Punjab"
     },
     {
         "Code":  "UP",
